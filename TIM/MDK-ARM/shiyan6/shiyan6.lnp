@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"shiyan6\startup_stm32f103xb.o"
+"shiyan6\main.o"
+"shiyan6\gpio.o"
+"shiyan6\tim.o"
+"shiyan6\usart.o"
+"shiyan6\stm32f1xx_it.o"
+"shiyan6\stm32f1xx_hal_msp.o"
+"shiyan6\stm32f1xx_hal_gpio_ex.o"
+"shiyan6\stm32f1xx_hal_tim.o"
+"shiyan6\stm32f1xx_hal_tim_ex.o"
+"shiyan6\stm32f1xx_hal.o"
+"shiyan6\stm32f1xx_hal_rcc.o"
+"shiyan6\stm32f1xx_hal_rcc_ex.o"
+"shiyan6\stm32f1xx_hal_gpio.o"
+"shiyan6\stm32f1xx_hal_dma.o"
+"shiyan6\stm32f1xx_hal_cortex.o"
+"shiyan6\stm32f1xx_hal_pwr.o"
+"shiyan6\stm32f1xx_hal_flash.o"
+"shiyan6\stm32f1xx_hal_flash_ex.o"
+"shiyan6\stm32f1xx_hal_exti.o"
+"shiyan6\stm32f1xx_hal_uart.o"
+"shiyan6\system_stm32f1xx.o"
+--strict --scatter "shiyan6\shiyan6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "shiyan6.map" -o shiyan6\shiyan6.axf
