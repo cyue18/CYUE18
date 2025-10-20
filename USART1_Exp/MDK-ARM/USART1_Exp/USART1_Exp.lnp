@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"usart1_exp\startup_stm32f103xb.o"
+"usart1_exp\main.o"
+"usart1_exp\gpio.o"
+"usart1_exp\usart.o"
+"usart1_exp\stm32f1xx_it.o"
+"usart1_exp\stm32f1xx_hal_msp.o"
+"usart1_exp\stm32f1xx_hal_gpio_ex.o"
+"usart1_exp\stm32f1xx_hal_tim.o"
+"usart1_exp\stm32f1xx_hal_tim_ex.o"
+"usart1_exp\stm32f1xx_hal_uart.o"
+"usart1_exp\stm32f1xx_hal.o"
+"usart1_exp\stm32f1xx_hal_rcc.o"
+"usart1_exp\stm32f1xx_hal_rcc_ex.o"
+"usart1_exp\stm32f1xx_hal_gpio.o"
+"usart1_exp\stm32f1xx_hal_dma.o"
+"usart1_exp\stm32f1xx_hal_cortex.o"
+"usart1_exp\stm32f1xx_hal_pwr.o"
+"usart1_exp\stm32f1xx_hal_flash.o"
+"usart1_exp\stm32f1xx_hal_flash_ex.o"
+"usart1_exp\stm32f1xx_hal_exti.o"
+"usart1_exp\system_stm32f1xx.o"
+--strict --scatter "USART1_Exp\USART1_Exp.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "USART1_Exp.map" -o USART1_Exp\USART1_Exp.axf
